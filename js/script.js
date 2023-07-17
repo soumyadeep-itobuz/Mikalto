@@ -16,6 +16,7 @@ function showRoom(i) {
         room[j].classList.add("hidden");
     }
 }
+
 function previousRoom() {
     if (roomIndex === 0) {
         roomIndex = room.length - 1;
