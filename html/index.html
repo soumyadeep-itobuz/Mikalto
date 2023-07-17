@@ -84,17 +84,12 @@
             <td>
               <input
                 placeholder="Check-in Date"
-                type="text"
-                onmouseover="(this.type = 'date')"
+                type="date"
                 class="border- border-bottom-1"
               />
             </td>
             <td>
-              <input
-                placeholder="Check-in Date"
-                type="text"
-                onmouseover="(this.type = 'date')"
-              />
+              <input placeholder="Check-in Date" type="date" />
             </td>
           </tr>
           <tr>
@@ -149,7 +144,7 @@
       <div class="mx-lg-5 px-lg-5 align-self-center mt-5 pt-5">
         <p>WELCOME TO</p>
         <h2 class="playfair-font">The Mikalto Luxury & Comfort Homestay</h2>
-        <p class="mt-5">
+        <p class="mt-5 text-black-50">
           Welcome to our five-star hotel inPuerto de la Cruz's old town. A
           marvellous combination of architecture, design and contemporary art.
           32 rooms and 10 uniquely different suites ensure our guests' stay is
@@ -160,7 +155,7 @@
           alt="signature"
           class="img-fluid w-75"
         />
-        <p>MELIDA AMANDA - HOTEL MANAGER</p>
+        <p class="text-black-50">MELIDA AMANDA - HOTEL MANAGER</p>
       </div>
       <div class="welcome-images d-none d-lg-block">
         <img
@@ -190,8 +185,8 @@
         >
           <p class="text-white-50">ELEGANCE AND COMFORT</p>
           <h2>Standart Room</h2>
-          <p>From: <span class="fs-4">$150</span>/ night</p>
-          <p>
+          <p class="text-white-50">From: <span class="fs-4 text-white">$150</span>/ night</p>
+          <p class="text-white-50">
             With wide and comfortable areas and daylight pouring in from the....
           </p>
           <p class="d-flex justify-content-between">
@@ -215,13 +210,13 @@
           </button>
         </div>
         <div class="room-beds position-relative">
-          <button class="position-absolute top-50">
-            <i class="fa-solid fa-angle-left" onclick="previousRoom()"></i>
+          <button class="position-absolute top-50 rounded-5 px-3 py-2 border-0" onclick="previousRoom()">
+            <i class="fa-solid fa-angle-left"></i>
           </button>
           <img src="../images/queen-bed.jpg" alt="bed" class="w-100" />
           <button
-            class="position-absolute top-50 room-next"
-            onclick="roomNext()"
+            class="position-absolute top-50 room-next rounded-5 px-3 py-2 border-0"
+            onclick="nextRoom()"
           >
             <i class="fa-solid fa-angle-right"></i>
           </button>
@@ -232,9 +227,9 @@
           class="blue-background p-0 text-white d-flex flex-column justify-content-center px-lg-5"
         >
           <p class="text-white-50">ELEGANCE AND COMFORT</p>
-          <h2>Standart Room</h2>
-          <p>From: <span class="fs-4">$200</span>/ night</p>
-          <p>
+          <h2>Delux Room</h2>
+          <p class="text-white-50">From: <span class="fs-4 text-white">$200</span>/ night</p>
+          <p class="text-white-50">
             With wide and comfortable areas and daylight pouring in from the....
           </p>
           <p class="d-flex justify-content-between">
@@ -258,13 +253,13 @@
           </button>
         </div>
         <div class="room-beds position-relative">
-          <button class="position-absolute top-50">
-            <i class="fa-solid fa-angle-left" onclick="previousRoom()"></i>
+          <button class="position-absolute top-50 rounded-5 px-3 py-2 border-0" onclick="previousRoom()">
+            <i class="fa-solid fa-angle-left"></i>
           </button>
           <img src="../images/king-bed.jpg" alt="bed" class="w-100" />
           <button
-            class="position-absolute top-50 room-next"
-            onclick="roomNext()"
+            class="position-absolute top-50 room-next rounded-5 px-3 py-2 border-0"
+            onclick="nextRoom()"
           >
             <i class="fa-solid fa-angle-right"></i>
           </button>
@@ -275,9 +270,9 @@
           class="blue-background p-0 text-white d-flex flex-column justify-content-center px-lg-5"
         >
           <p class="text-white-50">ELEGANCE AND COMFORT</p>
-          <h2>Standart Room</h2>
-          <p>From: <span class="fs-4">$100</span>/ night</p>
-          <p>
+          <h2>Normal Room</h2>
+          <p class="text-white-50">From: <span class="fs-4 text-white">$100</span>/ night</p>
+          <p class="text-white-50">
             With wide and comfortable areas and daylight pouring in from the....
           </p>
           <p class="d-flex justify-content-between">
@@ -301,13 +296,13 @@
           </button>
         </div>
         <div class="room-beds position-relative">
-          <button class="position-absolute top-50">
-            <i class="fa-solid fa-angle-left" onclick="previousRoom()"></i>
+          <button class="position-absolute top-50 rounded-5 px-3 py-2 border-0" onclick="previousRoom()">
+            <i class="fa-solid fa-angle-left"></i>
           </button>
           <img src="../images/single-bed.jpg" alt="bed" class="w-100" />
           <button
-            class="position-absolute top-50 room-next"
-            onclick="roomNext()"
+            class="position-absolute top-50 room-next border-0 rounded-5 px-3 py-2"
+            onclick="nextRoom()"
           >
             <i class="fa-solid fa-angle-right"></i>
           </button>
@@ -324,7 +319,7 @@
           <p><i class="fa-solid fa-burger fs-1 blue-color"></i></p>
           <p class="fw-bold fs-5">
             Unique Cuisine <br />
-            <span class="fw-light fs-6"
+            <span class="fw-normal fs-6 text-black-50"
               >We use the best ingredients to make special and really tasty
               dishes. Choose what you want to eat every day. You order at the
               moment.</span
@@ -335,7 +330,7 @@
           <p><i class="fa-solid fa-dumbbell fs-1 blue-color"></i></p>
           <p class="fw-bold fs-5">
             Yoga & Gym <br />
-            <span class="fw-light fs-6"
+            <span class="fw-normal fs-6 text-black-50"
               >Sauna and solarium, a fitness corner, bicycles and Mikalto
               Walking poles available. To stay in shape especially on
               vacation.</span
@@ -346,7 +341,7 @@
           <p><i class="fa-solid fa-location-dot fs-1 blue-color"></i></p>
           <p class="fw-bold fs-5">
             Perfect Location <br />
-            <span class="fw-light fs-6"
+            <span class="fw-normal fs-6 text-black-50"
               >The hotel is located near some of the most beautiful sandy
               beaches. This is the hotel to book if you plan to spend a great
               deal of time.</span
@@ -365,7 +360,7 @@
           <p class="fs-2 playfair-font">
             Give yourself a smile- Smile & Wellness
           </p>
-          <p>
+          <p class="text-white-50">
             Proin nec leo vel metus faucibus vehicula. Donec vulputate in magna
             eget egestas. Aliquam ac facilisis ante, sit amet tincidunt ante.
             Fusce dolor sapien, sodales at velit non, lobortis volutpat ante.
@@ -373,7 +368,7 @@
             tincidunt gravida, eros nulla dapibus lacus, ut dapibus diam dui vel
             tortor.
           </p>
-          <button class="bg-transparent border-0 text-white px-0 mt-3">
+          <button class="bg-transparent border-0 text-white-50 px-0 mt-3">
             Explore More <i class="fa-solid fa-arrow-right-long"></i>
           </button>
         </div>
@@ -386,19 +381,19 @@
           <p class="fs-2 playfair-font ms-2">
             Experience a truly unforgattable holiday
           </p>
-          <p class="ms-2">
+          <p class="ms-2 text-white-50">
             The wilderness and authenticity of this tiny village nestled between
             steep mountain cliffs and miles and miles of beautiful beaches drew
             foreign visitors like a magnet.
           </p>
-          <ul class="mt-5">
+          <ul class="mt-5 text-white-50">
             <li>Thermal water with ancient baths</li>
             <li>Turkish bath</li>
             <li>Turkish sauna</li>
             <li>Relax and therapy massage</li>
           </ul>
           <button
-            class="bg-transparent border-white text-white px-5 p-2 ms-2 mt-3"
+            class="bg-transparent border-white text-white-50 px-5 p-2 ms-2 mt-3"
           >
             Book Your Stay
           </button>
@@ -425,7 +420,7 @@
           />
           <p class="blue-color fs-4">WELLNESS</p>
           <p>Dedicated to Wellness</p>
-          <p>
+          <p class="text-black-50">
             Aman's approach to wellness is focused on personalisation, privacy
             and seclusion. Local spa rituals with indigenous ingredients, offer
             a profoundly therapeutic touch, and a gentle sense of discovery.
@@ -442,7 +437,7 @@
           />
           <p class="blue-color fs-4">GIFT CARDS</p>
           <p>The gift of future travel</p>
-          <p>
+          <p class="text-black-50">
             Share extraordinary experiences with the Aman E- Gift Card -
             delivered instantly and offering memories that last a lifetime.
           </p>
@@ -454,7 +449,7 @@
           <img src="../images/experience-spa.jpg" alt="spa" class="w-100" />
           <p class="blue-color fs-4">MIKALTO SHOP</p>
           <p>The spa experience from home</p>
-          <p>
+          <p class="text-black-50">
             Skincare and Spa supplements harness powerful natural ingredients to
             provide balance and optimal wellbeing.
           </p>
@@ -470,7 +465,7 @@
           />
           <p class="blue-color fs-4">EXPERIENCE</p>
           <p>Adventures in the Wild</p>
-          <p>
+          <p class="text-black-50">
             Skincare and Spa supplements harness powerful natural ingredients to
             provide balance and optimal wellbeing.
           </p>
@@ -664,7 +659,7 @@
         <input
           type="text"
           placeholder="Enter Your Email address..."
-          class="border-0"
+          class="border-0 w-75"
         />
         <button class="blue-background text-white px-4 py-1">Subscribe</button>
       </p>
@@ -680,11 +675,11 @@
       class="footer d-flex flex-column mt-5 text-white blue-background small-font"
     >
       <div
-        class="d-flex flex-wrap flex-xl-nowrap gap-3 justify-content-evenly p-5 -5"
+        class="d-flex flex-wrap flex-xl-nowrap gap-3 justify-content-evenly p-2"
       >
         <div class="footer-topleft">
           <h2 class="playfair-font fs-1">MIKALTO</h2>
-          <p class="small-font mx-4">HOTELS & RESORTS</p>
+          <p class="small-font mx-1 mx-md-3">HOTELS & RESORTS</p>
           <p class="poppins-font mt-3">
             Duis vitae nulla at nisl finibus pharetra. Nunc porttitor sapien
             quis euismod sodales. Nullam in ipsum nibh.
@@ -706,8 +701,8 @@
             ><i class="fa-brands fa-square-pinterest p-1"></i
           ></a>
         </div>
-        <div class="footer-top d-flex flex-column ms-5">
-          <p class="fs-5 py-2">About US</p>
+        <div class="footer-top d-flex flex-column ms-lg-5">
+          <p class="fs-5 py-2">About</p>
           <a href="#" class="text-white">About Us</a>
           <a href="#" class="text-decoration-none text-white-50 fw-light"
             >Careers</a
@@ -765,7 +760,7 @@
               >(+123) 1500-456-7890</span
             >
           </p>
-          <p class="text-white-50 fw-light mt-2">
+          <p class="text-white-50 fw-light mt-">
             Need Life Support? <br /><a
               href="#"
               class="text-white text-decoration-none"
@@ -790,7 +785,7 @@
           >
           <a href="#" class="text-decoration-none text-white px-3">Policy</a>
         </p>
-        <p>
+        <p class="mx-3">
           <i class="fa-solid fa-globe"></i>
           <select
             name="lang"

@@ -25,7 +25,7 @@ function previousRoom() {
   showRoom(roomIndex);
 }
 
-function roomNext() {
+function nextRoom() {
   if (roomIndex === room.length - 1) {
     roomIndex = 0;
   } else {

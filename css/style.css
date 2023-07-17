@@ -11,7 +11,7 @@ body {
 }
 
 .blue-color {
-    color:  #0e245d;
+    color: #0e245d;
 }
 
 .blue-background {
@@ -52,19 +52,23 @@ body {
 }
 
 .animate {
-  animation-name: fade;
-  animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
 }
-@keyframes fade {
-  from {
-    opacity: 0.1;
-    translate: 10px;
-  }
 
-  to {
-    opacity: 1;
-    translate: -10px;
-  }
+@keyframes fade {
+    from {
+        opacity: 0.5;
+        translate: 15px;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+button:hover {
+    scale: 1.1;
 }
 
 @media (min-width: 768px) {
